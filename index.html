@@ -4,7 +4,7 @@
 	<head>
 		<meta charset="utf-8">
 
-		<title>The Journey from Network Beginner to Network Programmer</title>
+		<title>Biography from Network Beginner to Network Programmer</title>
 
 		<meta name="description" content="A presentation of experiences to learn the network">
 		<meta name="author" content="Aris C. Risdianto (adopted from work of Hakim El Hattab - slide.com)">
@@ -22,8 +22,12 @@
 
 		<!-- If the query includes 'print-pdf', use the PDF print sheet -->
 		<script>
-			document.write( '<link rel="stylesheet" href="css/print/' + ( window.location.search.match( /print-pdf/gi ) ? 'pdf' : 'paper' ) + '.css" type="text/css" media="print">' );
-		</script>
+			var link = document.createElement( 'link' );
+	        link.rel = 'stylesheet';
+	        link.type = 'text/css';
+	        link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+	        document.getElementsByTagName( 'head' )[0].appendChild( link );
+        </script>
 
 		<!--[if lt IE 9]>
 		<script src="lib/js/html5shiv.js"></script>
@@ -39,9 +43,9 @@
 
 
 				<section>
-                    <p><h2>The Journey</h2>
-                    <p><h2>From Network Beginner</h2></p>
-                    <p><h2>to Network Programmer </h2></p>
+                    <p><h2>Biography :</h2>
+                    <p><h3>From Network Beginner</h3></p>
+                    <p><h3>to Network Programmer </h3></p>
 					<p>
 						<small>Created by <a href="https://twitter.com/ariscahyadi">@ariscahyadi</a></small>
 					</p>
@@ -75,7 +79,7 @@
                                            <li class="fragment"> <b>Bachelor degree</b> from Tel-U 2002 </li>
                                            <li class="fragment"> <b>System/Research Engineer </b> at PT. NCI in 2003 – 2005 </li>
                                            <li class="fragment"> <b>System/Network Engineer </b> at PT. DDI in 2005 – 2007 </li>
-                                           <li class="fragment"> <b>Network Administrator/Engineer</b> at Ooredoo in 2007 – 2010 </li>
+                                           <li class="fragment"> <b>Network Administrator/Engineer</b> at Ooredoo Qatar in 2007 – 2010 </li>
                                            <li class="fragment"> <b>Master degree</b> from ITB in 2012 </li>
                                            <li class="fragment"> <b>PhD candidate and Research Assistant</b> at GIST from 2013 </li>
                                            <li class="fragment"> <b>TBD</b></li>
@@ -95,19 +99,19 @@
 
                                        <section data-markdown>
                                        <script type="text/template">
-                                           <h2>What I Did?</h2>
+                                           <h2>Network Beginner</h2>
                                            <p> ---- @@@ ---- </p>
                                            <p>&nbsp;</p>
                                            * Joined research member in Computer and Communication Laboratory
-                                           * Learn about Operating System (Linux, Windows, Solaris and FreeBSD)
                                            * Learn basic networking (Ethernet BNC/UTP, Hub/Switch, and PC Router)
+                                           * Learn about Operating System (Linux, Windows, Solaris and FreeBSD)
+                                           * Learn about Open Source Project (Linux, Apache, others)
                                            * Maintain student servers (Web, Mail, DNS, FTP)
-                                           * Trainer for Linux and basic networking
-                                           * Use the networking knowledge (IPv6) for Final Project
+                                           * Use my networking knowledge (IPv6) for Final Project
                                        </script>
                                        </section>
 
-                                       <section data-markdown>
+                                       <!-- <section data-markdown>
                                        <script type="text/template">
                                            <h2>What I Learned?</h2>
                                            <p> ---- @@@ ---- </p>
@@ -120,7 +124,7 @@
                                                <li class="fragment"><blockquote>Learn something open is more useful, you can see all manual, codes, comments, etc.</blockquote></li>
                                            </ul>
                                        </script>
-                                       </section>
+                                       </section> -->
                                 </section>
 
 
@@ -134,19 +138,19 @@
 
                                         <section data-markdown>
                                             <script type="text/template">
-                                                <h2>What I Did?</h2>
+                                                <h2>Network Engineer</h2>
                                                 <p> ---- @@@ ---- </p>
                                                 <p>&nbsp;</p>
-                                                * Joined network-focus company instead of Telco company
-                                                * Got CCNA in 3 months in work
-                                                * Got CCNP less than year in work
+                                                * Joined IP Network-focused company instead of Telecommunication company
+                                                * Got CCNA in 3 months in work (2003)
+                                                * Got CCNP less than year in work (2004)
                                                 * Learn multiple networks (IP, mobile networks)
-                                                * Integrate between the networks (networking)
+                                                * Integrate between the networks (SS7 over IP and others)
 
                                             </script>
                                         </section>
 
-                                        <section data-markdown>
+                                        <!-- <section data-markdown>
                                             <script type="text/template">
                                                 <h2>What I Learned?</h2>
                                                 <p> ---- @@@ ---- </p>
@@ -159,7 +163,7 @@
                                                     <li class="fragment"><blockquote>Trust the ‘Wireshark’, he will tell us the truth.</blockquote></li>
                                                 </ul>
                                             </script>
-                                        </section>
+                                        </section> -->
                                 </section>
 
                                 <section>
@@ -172,18 +176,19 @@
 
                                         <section data-markdown>
                                             <script type="text/template">
-                                                <h2>What I Did?</h2>
+                                                <h2>Network Administrator</h2>
                                                 <p> ---- @@@ ---- </p>
                                                 <p>&nbsp;</p>
-                                                * Responsible for IP network of Telco operators
+                                                * Joined network operators for Mobile and Fixed service providers
+                                                * Responsible for maintaining IP network for service providers
                                                 * Testing and verification amongst the vendors
-                                                * Operate and maintain complex network
-                                                * Work with multiple languages and time zones
+                                                * Operate and maintain complex network (Telco Core/Access Network)
+                                                * Work with multiple styles and time zones
 
                                             </script>
                                         </section>
 
-                                        <section data-markdown>
+                                        <!-- <section data-markdown>
                                             <script type="text/template">
                                                 <h2>What I Learned?</h2>
                                                 <p> ---- @@@ ---- </p>
@@ -196,7 +201,7 @@
                                                     <li class="fragment"><blockquote>Prepare the roll back plan and always has alternative plans.</blockquote></li>
                                                 </ul>
                                             </script>
-                                        </section>
+                                        </section> -->
 
                                 </section>
 
@@ -210,17 +215,17 @@
 
                                         <section data-markdown>
                                             <script type="text/template">
-                                                <h2>What I Did?</h2>
+                                                <h2>Network Programmer</h2>
                                                 <p> ---- @@@ ---- </p>
                                                 <p>&nbsp;</p>
-                                                * Found something interesting/new about network (SDN, NFV, …)
-                                                * Explore the available and open solutions
-                                                * Join collaboration discussion or groups
+                                                * Found something interesting/new about networking (SDN, NFV, …)
+                                                * Explore 'again' about Open Source Software and Solutions
+                                                * Join 'Open' collaboration discussion or groups
                                                 * Try to contribute from the simple/basic things
                                             </script>
                                         </section>
 
-                                        <section data-markdown>
+                                        <!-- <section data-markdown>
                                             <script type="text/template">
                                                 <h2>What I Learned?</h2>
                                                 <p> ---- @@@ ---- </p>
@@ -233,7 +238,7 @@
                                                     <li class="fragment"><blockquote>Define our own applications, make our unique network deployment.</blockquote></li>
                                                 </ul>
                                             </script>
-                                        </section>
+                                        </section> -->
                                 </section>
 
                                 <section>
@@ -270,11 +275,11 @@
 
                                 </section>
 
-                                <section data-markdown>
+                                <!-- <section data-markdown>
                                     <script type="text/template">
                                         ![logo](images/your-turn.png)
                                     </script>
-                                </section>
+                                </section> -->
 
                                <section data-markdown>
                                <script type="text/template">
