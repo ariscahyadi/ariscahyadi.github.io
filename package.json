@@ -22,7 +22,7 @@
     "express": "^4.17.1",
     "mustache": "^4.2.0",
     "socket.io": "^4.0.1",
-    "underscore": "~1.12.1",
+    "underscore": "~1.13.8",
     "getobject": ">=1.0.0",
     "set-value": ">=4.0.1"
   },
